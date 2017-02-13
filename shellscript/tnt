@@ -1,0 +1,52 @@
+#!/bin/bash
+clear
+echo -e "   _____                 _              _____  _____   ____   _____   _________      __
+  / ____|               (_)            |  __ \|  __ \ / __ \ / ____| |__   __\ \    / /
+ | |    _   _ _ __  _ __ _  ___ _ __   | |__) | |__) | |  | | |  __     | |   \ \  / / 
+ | |   | | | | '_ \| '__| |/ _ \ '_ \  |  ___/|  _  /| |  | | | |_ |    | |    \ \/ /  
+ | |___| |_| | |_) | |  | |  __/ | | | | |    | | \ \| |__| | |__| |    | |     \  /   
+  \_____\__, | .__/|_|  |_|\___|_| |_| |_|    |_|  \_\\____/ \_____|    |_|      \/    
+         __/ | |                                                                       
+        |___/|_|                                                                       
+"
+echo -e "\n\n\n"
+prog=$(GET http://www.cesoirtv.com/ | grep HB | grep gras | cut -d ">" -f 2 | cut -d "<" -f 1 | tr  \\n "@")
+echo -e  "\033[32m\033[1m SUR TF1 CE SOIR ==== >\033[0m   "$prog | cut -d "@" -f 1
+echo -e "\n\n\n"
+
+
+echo -e "\033[32m\033[1mSUR FRANCE 2 CE SOIR ==== >\033[0m  $( echo $prog | cut -d \@ -f 2)"
+ echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR FRANCE 3 CE SOIR ==== >\033[0m  $( echo $prog | cut -d \@ -f 3)"
+echo -e "\n\n\n"
+  
+echo -e "\033[32m\033[1mSUR CANAL + CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 4)"
+echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR FRANCE 5 CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 5)"
+echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR M6 CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 6)"
+echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR ARTE CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 7)"
+echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR C8 CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 8)"
+echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR W9 CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 9)"
+echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR TMC CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 10)"
+echo -e "\n\n\n"
+
+echo -e "\033[32m\033[1mSUR NT1 CE SOIR ==== >\033[0m   $( echo $prog | cut -d \@ -f 11)"
+echo -e "\n\n\n"
+
+
+
+
+
+
